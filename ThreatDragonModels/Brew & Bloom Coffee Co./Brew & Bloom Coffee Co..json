@@ -1224,8 +1224,8 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
+              "handlesGoodsOrServices": true,
+              "isWebApplication": true,
               "privilegeLevel": "",
               "threats": []
             }
@@ -1343,7 +1343,7 @@
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "handlesCardPayment": false,
+              "handlesCardPayment": true,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
@@ -1465,6 +1465,13 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1586,8 +1593,8 @@
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
+              "storesCredentials": true,
+              "storesInventory": true,
               "threats": []
             }
           },
