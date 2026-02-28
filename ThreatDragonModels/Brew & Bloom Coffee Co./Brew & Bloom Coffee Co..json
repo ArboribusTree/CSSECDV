@@ -2817,6 +2817,21 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
@@ -2871,6 +2886,44 @@
               {
                 "x": 750,
                 "y": 290
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "760230ab-d64d-4549-ae1b-e4e67c623f6c",
+            "source": {
+              "x": 470,
+              "y": 340
+            },
+            "target": {
+              "x": 800,
+              "y": 350
+            },
+            "vertices": [
+              {
+                "x": 530,
+                "y": 410
+              },
+              {
+                "x": 730,
+                "y": 410
               }
             ]
           },
