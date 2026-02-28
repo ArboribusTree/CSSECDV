@@ -48,6 +48,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -131,7 +132,6 @@
               ]
             },
             "id": "c002e3a5-4f1a-45b0-8aad-47a54131184f",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -165,6 +165,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -248,7 +249,6 @@
               ]
             },
             "id": "060ef337-d0c1-4a42-9387-a0ea87de57cc",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web Application Server",
@@ -288,6 +288,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -371,7 +372,6 @@
               ]
             },
             "id": "7931ab52-7b40-49b9-8228-73f4370988e0",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
@@ -409,6 +409,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -492,7 +493,6 @@
               ]
             },
             "id": "720f0a69-dbcd-4433-b723-e7d50d4d3d22",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Payment Gateway",
@@ -814,6 +814,196 @@
               {
                 "x": 960,
                 "y": 80
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Store and Update Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Store and Update Data"
+            ],
+            "id": "63df4fc7-e826-46ca-afa2-72bd3a828018",
+            "source": {
+              "cell": "060ef337-d0c1-4a42-9387-a0ea87de57cc",
+              "port": "37b90821-909c-4387-a158-2d38e0de9342"
+            },
+            "target": {
+              "cell": "7931ab52-7b40-49b9-8228-73f4370988e0",
+              "port": "ae6dd322-8870-49db-95b7-e575da944d6a"
+            },
+            "vertices": [
+              {
+                "x": 490,
+                "y": 395
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Retrieve Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Retrieve Data"
+            ],
+            "id": "c36d739e-705d-439a-8459-7c33194ac432",
+            "source": {
+              "cell": "7931ab52-7b40-49b9-8228-73f4370988e0",
+              "port": "ae6dd322-8870-49db-95b7-e575da944d6a"
+            },
+            "target": {
+              "cell": "060ef337-d0c1-4a42-9387-a0ea87de57cc",
+              "port": "37b90821-909c-4387-a158-2d38e0de9342"
+            },
+            "vertices": [
+              {
+                "x": 600,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Processing",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Payment Processing"
+            ],
+            "id": "e6dfe2ae-06c6-48f9-8f2f-2b5582eccdf2",
+            "source": {
+              "cell": "060ef337-d0c1-4a42-9387-a0ea87de57cc",
+              "port": "37b90821-909c-4387-a158-2d38e0de9342"
+            },
+            "target": {
+              "cell": "720f0a69-dbcd-4433-b723-e7d50d4d3d22",
+              "port": "c85b9dcc-7d2b-49ca-975d-0f2455647321"
+            },
+            "vertices": [
+              {
+                "x": 970,
+                "y": 395
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Internet Boundary"
+            ],
+            "id": "bf1dcfc2-da36-498a-8730-b3274825d136",
+            "source": {
+              "x": 370,
+              "y": 100
+            },
+            "target": {
+              "x": 1100,
+              "y": 100
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": 200
               }
             ]
           }
