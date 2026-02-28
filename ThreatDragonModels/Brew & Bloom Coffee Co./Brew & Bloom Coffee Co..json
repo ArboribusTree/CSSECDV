@@ -2032,7 +2032,7 @@
       },
       {
         "id": 3,
-        "title": " Barista Updates Order Status",
+        "title": "Barista Updates Order Status",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -2687,7 +2687,7 @@
         ]
       }
     ],
-    "diagramTop": 5,
+    "diagramTop": 6,
     "reviewer": "Jason M. Ampoloquio",
     "threatTop": 21
   }
