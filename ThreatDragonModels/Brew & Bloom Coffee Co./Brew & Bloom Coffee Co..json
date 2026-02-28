@@ -1663,7 +1663,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1684,16 +1685,30 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "9bcba0ca-e2b8-4aa9-9d07-a06d5d50abc9",
+                  "title": "T-011 - Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members due to insecure storage or unencrypted transmission.",
+                  "mitigation": "Defences include providing enforcement of behavioral workflow and anti-automation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": "10"
+                }
+              ],
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 2,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
             },
@@ -1720,7 +1735,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1741,16 +1757,30 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "7a6b88a1-e900-456f-8aa3-ea45e086127a",
+                  "title": "T-013 - Sales Data Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.",
+                  "mitigation": "Defences include providing enforcement of behavioral workflow and anti-automation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": "7"
+                }
+              ],
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
             },
@@ -1777,8 +1807,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1799,30 +1828,16 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "9ff18367-3f98-47bf-8da4-f92e27557ea2",
-                  "title": "T-013 - Sales Data Disclosure",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Unauthorized access to sales reports or underlying aggregated sales data",
-                  "mitigation": "Defences include providing enforcement of behavioral workflow and anti-automation",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 16,
-                  "score": "7"
-                }
-              ],
+              "threats": [],
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 0,
                 "denialOfService": 0
               }
             },
@@ -2008,6 +2023,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Jason M. Ampoloquio",
-    "threatTop": 17
+    "threatTop": 19
   }
 }
