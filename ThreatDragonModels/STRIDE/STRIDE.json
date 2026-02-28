@@ -256,12 +256,12 @@
           },
           {
             "position": {
-              "x": 480,
-              "y": 500
+              "x": 470,
+              "y": 490
             },
             "size": {
-              "width": 120,
-              "height": 60
+              "width": 150,
+              "height": 80
             },
             "attrs": {
               "text": {
@@ -376,6 +376,15 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -493,13 +502,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
