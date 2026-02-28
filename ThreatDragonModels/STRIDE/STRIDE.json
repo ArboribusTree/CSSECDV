@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "77073cc2-69b7-46e7-9a98-09c2688ac3b7",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "client",
@@ -165,6 +165,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -248,7 +249,6 @@
               ]
             },
             "id": "b0fee5a9-8e22-4b00-a027-ea5a97ab305f",
-            "zIndex": 2,
             "data": {
               "type": "tm.Store",
               "name": "database",
@@ -286,6 +286,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -369,7 +370,6 @@
               ]
             },
             "id": "5802e9fd-7af0-4109-9b74-7fe394bb781c",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "web app",
@@ -406,6 +406,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -489,7 +490,6 @@
               ]
             },
             "id": "873440e3-8424-4733-8b0e-b1662c315388",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "third party",
@@ -664,28 +664,79 @@
             ],
             "id": "1ceef011-f3d9-4bf9-82e0-043661ab8c22",
             "source": {
-              "x": 260,
-              "y": -390
+              "x": 400,
+              "y": -330
             },
             "target": {
-              "x": 260,
-              "y": -110
+              "x": 400,
+              "y": -170
             },
             "vertices": [
               {
-                "x": 360,
-                "y": -310
+                "x": 380,
+                "y": -330
               },
               {
-                "x": 360,
+                "x": 380,
                 "y": -190
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
+            "zIndex": 11,
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
@@ -701,12 +752,12 @@
             ],
             "id": "330b81f0-caab-4be6-825d-a9741896b659",
             "source": {
-              "x": 604,
-              "y": -386
+              "x": 550,
+              "y": -330
             },
             "target": {
-              "x": 640,
-              "y": -110
+              "x": 550,
+              "y": -170
             },
             "vertices": [
               {
@@ -715,10 +766,9 @@
               },
               {
                 "x": 570,
-                "y": -200
+                "y": -170
               }
-            ],
-            "zIndex": 11
+            ]
           }
         ]
       }
