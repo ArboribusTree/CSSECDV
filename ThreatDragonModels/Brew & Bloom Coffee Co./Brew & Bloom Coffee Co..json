@@ -1227,7 +1227,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Web Application Server",
-              "description": "",
+              "description": "Handles: Manager authentication, Authorization checks, Sales report generation, Formatting data",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1350,7 +1350,7 @@
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
-              "description": "",
+              "description": "Stores: Sales records, Orders, Transaction history",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1471,20 +1471,13 @@
             "data": {
               "type": "tm.Actor",
               "name": "Manager",
-              "description": "",
+              "description": "Performs: Login, Report request, Report viewing",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
