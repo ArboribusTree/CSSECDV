@@ -971,7 +971,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "Internet Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -979,27 +979,23 @@
               "containedElements": []
             },
             "labels": [
-              "Trust Boundary"
+              "Internet Boundary"
             ],
-            "id": "71431215-cab5-4cab-a03e-b25120000ab6",
+            "id": "77ef927f-4e66-454d-b749-f77f0582a69d",
             "source": {
-              "x": 390,
-              "y": 110
-            },
-            "target": {
-              "x": 1170,
+              "x": 440,
               "y": 120
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "target": {
+              "x": 1120,
+              "y": 120
+            },
+            "vertices": [
+              {
+                "x": 770,
+                "y": 190
+              }
+            ]
           }
         ]
       }
