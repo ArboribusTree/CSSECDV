@@ -2068,6 +2068,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -2151,7 +2152,6 @@
               ]
             },
             "id": "65bae1b4-76f9-408f-a1e7-024f73b4cf5e",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Web Application Server",
@@ -2191,6 +2191,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -2274,7 +2275,6 @@
               ]
             },
             "id": "057f5eba-3661-4171-82f2-617f1046343d",
-            "zIndex": 2,
             "data": {
               "type": "tm.Store",
               "name": "Web Server",
@@ -2312,6 +2312,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -2395,7 +2396,6 @@
               ]
             },
             "id": "11234ab2-f84f-4478-881a-38f832a420c5",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Administrator",
@@ -2636,8 +2636,8 @@
             ],
             "id": "a89975ca-eed6-44b7-8da9-0bd121452227",
             "source": {
-              "x": 380,
-              "y": 100
+              "x": 520,
+              "y": 80
             },
             "target": {
               "x": 1010,
@@ -2647,6 +2647,120 @@
               {
                 "x": 750,
                 "y": 220
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Database Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Database Boundary"
+            ],
+            "id": "b09daf3d-15b1-4c9e-b781-2149cfd1c163",
+            "source": {
+              "x": 503,
+              "y": 430
+            },
+            "target": {
+              "x": 1010,
+              "y": 430
+            },
+            "vertices": [
+              {
+                "x": 750,
+                "y": 530
               }
             ]
           }
