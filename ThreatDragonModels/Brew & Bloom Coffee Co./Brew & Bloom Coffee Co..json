@@ -1122,7 +1122,7 @@
           {
             "position": {
               "x": 630,
-              "y": 240
+              "y": 210
             },
             "size": {
               "width": 170,
@@ -1242,7 +1242,7 @@
           {
             "position": {
               "x": 635,
-              "y": 530
+              "y": 500
             },
             "size": {
               "width": 160,
@@ -1366,7 +1366,7 @@
           {
             "position": {
               "x": 658.75,
-              "y": 52
+              "y": 22
             },
             "size": {
               "width": 112.5,
@@ -1484,7 +1484,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1505,13 +1506,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "eb5e9ecb-46aa-42b0-96ed-1c3a9a805739",
+                  "title": "T-002 Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could impersonate staff to manipulate order statuses,\naccess sales reports, or modify menu items and application\nconfigurations.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "5"
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 3,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Login Credentials and Report Request"
@@ -1528,9 +1548,19 @@
             "vertices": [
               {
                 "x": 580,
-                "y": 180
+                "y": 150
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1580,7 +1610,7 @@
             "vertices": [
               {
                 "x": 870,
-                "y": 180
+                "y": 150
               }
             ]
           },
@@ -1632,7 +1662,7 @@
             "vertices": [
               {
                 "x": 610,
-                "y": 470
+                "y": 440
               }
             ]
           },
@@ -1684,7 +1714,7 @@
             "vertices": [
               {
                 "x": 820,
-                "y": 470
+                "y": 440
               }
             ]
           },
@@ -1779,6 +1809,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Jason M. Ampoloquio",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
