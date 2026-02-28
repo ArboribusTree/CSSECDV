@@ -1122,7 +1122,7 @@
           {
             "position": {
               "x": 630,
-              "y": 210
+              "y": 240
             },
             "size": {
               "width": 170,
@@ -1242,7 +1242,7 @@
           {
             "position": {
               "x": 635,
-              "y": 500
+              "y": 530
             },
             "size": {
               "width": 160,
@@ -1366,7 +1366,7 @@
           {
             "position": {
               "x": 658.75,
-              "y": 22
+              "y": 52
             },
             "size": {
               "width": 112.5,
@@ -1479,6 +1479,248 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login Credentials and Report Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login Credentials and Report Request"
+            ],
+            "id": "968b0dff-cf20-4926-aa46-ca522c5cadde",
+            "source": {
+              "cell": "26e8e175-9c56-4d1e-8204-b5ee2dda6aa6",
+              "port": "d6d9b728-3e9e-4fef-9bd9-b6e6b92aaff0"
+            },
+            "target": {
+              "cell": "13495af1-d6ad-4da4-b300-11777a96e1e1",
+              "port": "d02e3205-1f79-40f2-ae40-e53bb82036c2"
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sales Report Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Sales Report Response"
+            ],
+            "id": "157dd14a-a918-4f8a-91e8-e0f868e001e2",
+            "source": {
+              "cell": "13495af1-d6ad-4da4-b300-11777a96e1e1",
+              "port": "d02e3205-1f79-40f2-ae40-e53bb82036c2"
+            },
+            "target": {
+              "cell": "26e8e175-9c56-4d1e-8204-b5ee2dda6aa6",
+              "port": "d6d9b728-3e9e-4fef-9bd9-b6e6b92aaff0"
+            },
+            "vertices": [
+              {
+                "x": 870,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sales Data Query",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Sales Data Query"
+            ],
+            "id": "202714ce-12f6-4a42-80fb-38b42eac095b",
+            "source": {
+              "cell": "13495af1-d6ad-4da4-b300-11777a96e1e1",
+              "port": "0932e020-43b6-4a03-9176-fe9a22202067"
+            },
+            "target": {
+              "cell": "80fda377-6feb-4d75-97dc-147ac9589b73",
+              "port": "d31e23f7-85d8-4ef8-b6e5-bff1c894de0a"
+            },
+            "vertices": [
+              {
+                "x": 610,
+                "y": 470
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sales Data Results",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Sales Data Results"
+            ],
+            "id": "378c8ece-185f-47a8-8f62-03d28c306003",
+            "source": {
+              "cell": "80fda377-6feb-4d75-97dc-147ac9589b73",
+              "port": "d31e23f7-85d8-4ef8-b6e5-bff1c894de0a"
+            },
+            "target": {
+              "cell": "13495af1-d6ad-4da4-b300-11777a96e1e1",
+              "port": "0932e020-43b6-4a03-9176-fe9a22202067"
+            },
+            "vertices": [
+              {
+                "x": 820,
+                "y": 470
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet Boundary",
+              "description": "Covers: Authentication, Spoofing, Privilege escalation",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Internet Boundary"
+            ],
+            "id": "47b49b19-8c2a-4f50-882d-6f7313fed199",
+            "source": {
+              "x": 370,
+              "y": 140
+            },
+            "target": {
+              "x": 1080,
+              "y": 140
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 210
+              }
+            ]
           }
         ]
       },
