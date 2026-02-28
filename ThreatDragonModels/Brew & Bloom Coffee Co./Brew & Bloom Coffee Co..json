@@ -1807,7 +1807,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1828,17 +1829,44 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "71233a44-1720-4fbb-ad8e-fe2bce50cf12",
+                  "title": "T-006 - Sales Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Unauthorized individuals could alter sales data in the MongoDB Database, leading to falsified reports.",
+                  "mitigation": "Defences include providing enforcement of behavioral workflow and anti-automation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": "5"
+                },
+                {
+                  "id": "4706388c-fcea-438a-9c0b-eaec76821452",
+                  "title": "T-015 - MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.",
+                  "mitigation": "Defence includes providing anti-automation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": "2"
+                }
+              ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 0,
+                "tampering": 1,
                 "informationDisclosure": 0,
-                "denialOfService": 0
+                "denialOfService": 1
               }
             },
             "labels": [
@@ -2023,6 +2051,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Jason M. Ampoloquio",
-    "threatTop": 19
+    "threatTop": 21
   }
 }
