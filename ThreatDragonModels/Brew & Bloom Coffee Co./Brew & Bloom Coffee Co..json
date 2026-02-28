@@ -2775,12 +2775,6 @@
               "cell": "dd36464f-4376-48e2-b41d-02fa0790d2d2",
               "port": "429de775-35d3-4682-a7aa-f41df88e247f"
             },
-            "vertices": [
-              {
-                "x": 320,
-                "y": 30
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -2835,7 +2829,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 30
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2951,6 +2951,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -3034,7 +3035,6 @@
               ]
             },
             "id": "7cbaa522-bb92-41f7-bcef-d6a025fc14b1",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
