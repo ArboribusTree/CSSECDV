@@ -137,7 +137,7 @@
           {
             "position": {
               "x": 395,
-              "y": -110
+              "y": -50
             },
             "size": {
               "width": 120,
@@ -611,12 +611,12 @@
             ],
             "id": "92abfd4e-5bf3-4793-b26e-a0c5af41f10c",
             "source": {
-              "x": 400,
-              "y": -330
+              "x": 390,
+              "y": -300
             },
             "target": {
               "x": 400,
-              "y": -140
+              "y": -160
             },
             "vertices": [
               {
@@ -625,7 +625,7 @@
               },
               {
                 "x": 370,
-                "y": -190
+                "y": -170
               }
             ]
           },
@@ -633,7 +633,7 @@
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
-            "zIndex": 13,
+            "zIndex": 10,
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
@@ -647,15 +647,25 @@
             "labels": [
               "Trust Boundary"
             ],
-            "id": "df2fd9bb-03bf-4dea-bee7-03cbf40672e7",
+            "id": "54d51340-e80c-45e1-adc1-dbced78e4c57",
             "source": {
-              "x": 590,
-              "y": -370
+              "x": 540,
+              "y": -300
             },
             "target": {
-              "x": 590,
-              "y": -100
-            }
+              "x": 540,
+              "y": -180
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": -300
+              },
+              {
+                "x": 560,
+                "y": -190
+              }
+            ]
           }
         ]
       }
