@@ -1,7 +1,7 @@
 {
   "version": "2.6.0",
   "summary": {
-    "title": "Brew & Bloom Coffee Co.",
+    "title": "Brew & Bloom Coffee Co",
     "owner": "VAPT 4",
     "description": "The Brew & Bloom Coffee Co. Ordering Application can be decomposed into the following key components and their interactions, forming the basis for identifying trust boundaries and data flows.",
     "id": 0
